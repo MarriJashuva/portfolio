@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h1>About Me</h1>
+      
+      <div class="about-container">
+        <div>
+        <img src="Images/person.png" alt="Profile Picture" class="profile-pic">
+      </div>
+        <div class="about-info">
+            <p>
+                Hello! I'm Jashuva Marri, an aspiring software engineer, with a solid foundation in Java, Python, and hands-on experience in web technologies. I'm eager to learn, collaborate, and make a meaningful impact.
+              </p>
+              <p>
+                <strong>Education:</strong>  
+                <ul>
+                  <li><b>B.Tech in Information Technology</b> at Lakireddy Bali Reddy College of Engineering (CGPA: 8.6, Expected Graduation: 2025)</li>
+                  <li><b>Intermediate:</b> Sri Chaitanya Junior College (CGPA: 9.0, 2021)</li>
+                  <li><b>S.S.C:</b> Sri Srinivasa High School (CGPA: 8.8, 2019)</li>
+                </ul>
+              </p>
+              <p><strong>Current Work:</strong> Building a Speech Emotion Recognition system to analyze and classify emotions from audio inputs using machine learning and deep learning</p>
+           <div class="contact-info">
+        <p><strong>Contact Me</strong></p>
+        <ul>
+          <li><a href="tel:+919154199050"><i class="fas fa-phone"></i> +91 9154199050</a></li>
+          <li><a href="mailto:jashuvamarri9154@gmail.com"><i class="fas fa-envelope"></i> jashuvamarri9154@gmail.com</a></li>
+        </ul>
+        <p><strong>Connect with Me</strong></p>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/jashuvaa1/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="https://github.com/MarriJashuva" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+        </ul>
+      </div>
+          <a class = 'resume' href="Images/Jashuvamarri.pdf" download>Download Resume</a>
+        </div>
+      </div>
+    </section>
+    <div class="main-skills">
+    <section id="skills">
+        <h1>Skills</h1>
+        <div class="skills-container">
+          <div class="skill" data-skill="HTML"><span>HTML</span></div>
+          <div class="skill" data-skill="CSS"><span>CSS</span></div>
+          <div class="skill" data-skill="JavaScript"><span>JavaScript</span></div>
+          <div class="skill" data-skill="React"><span>React</span></div>
+          <div class="skill" data-skill="Python"><span>Python</span></div>
+          <div class="skill" data-skill="Java"><span>Java</span></div>
+          <div class="skill" data-skill="Mern"><span>Mern</span></div>
+          <div class="skill" data-skill="ML_DL"><span>ML & DL</span></div>
+        </div>
+      </section>
+
+      <div id="chart-container"></div>
+    </div>
+
+    <section id="projects" style="padding-bottom: 50px;">
+      <h1>Projects</h1>
+      <div class="projects-container">
+        <!-- Speech Emotion Recognition Project -->
+        <div class="project-card">
+          <h3 style="text-align: center;">Speech Emotion Recognition</h3>
+          <p style="text-align: center;">Developed a deep learning-based Speech Emotion Recognition system integrating CNN and Bi-LSTM, utilizing MFCC for feature extraction, data augmentation, and Bayesian Optimization for enhanced accuracy and robustness.</p>
+          <a style="margin-left: 70px;" href="https://github.com/MarriJashuva/Speech-Emotion-Recognition" target="_blank">GitHub Repo</a>
+        </div>
+        
+        <!-- Email Spam Detection Project -->
+        <div class="project-card">
+          <h3 style="text-align: center;">Email Spam Detection</h3>
+          <p style="text-align: center;">Designed a spam detection model using CNN + LSTM architectures. Developed a web interface with Streamlit for real-time predictions. Optimized data preprocessing techniques to improve model accuracy.</p>
+          <a style="margin-top: 50px;margin-left: 70px;" href="https://github.com/MarriJashuva/email" target="_blank">GitHub Repo</a>
+        </div>
+    
+        <!-- Venue Ista (MERN Stack) -->
+        <div class="project-card">
+          <h3 style="text-align: center;">Venue Ista (MERN Stack)</h3>
+          <p style="text-align: center;">Built a dynamic web application using MongoDB, Express.js, React, and Node.js. Implemented features such as user authentication and booking functionality.</p>
+          <a style="margin-top: 70px;margin-left: 70px;" href="https://github.com/MarriJashuva/ProductBooking" target="_blank">GitHub Repo</a>
+        </div>
+    
+        <!-- Lakshadweep Islands Tourism Website -->
+        <div class="project-card">
+          <h3 style="text-align: center;">Lakshadweep Islands Tourism Website</h3>
+          <p style="text-align: center;">Developed a tourism website using HTML, CSS, JavaScript, and Express.js. Integrated user registration and email notifications with MongoDB.</p>
+          <a style="margin-top: 65px;margin-left: 70px;" href="https://github.com/MarriJashuva/Laksha" target="_blank">GitHub Repo</a>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="contact" style="outline: none;">
+      <h1>Contact</h1>
+      <form id="contact-form">
+        <input style="outline: none;" type="text" id="name" placeholder="Your Name" required>
+        <input style="outline: none;"  type="email" id="email" placeholder="Your Email" required>
+        <textarea  style="outline: none;" id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
